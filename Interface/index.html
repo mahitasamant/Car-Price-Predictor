@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie-edge">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src='app.js'></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class='img'></div>
+    <div class="title">
+    <h1>Car Price Predictor</h1>
+  </div>
+    <form class='form'>
+      
+        <h2>Wheelbase</h2>
+        <input class='fielda' type='email' id='wheelbasemetre' class='floatlabel' name='unit' >
+        <h2>Car Length (INCHES)</h2>
+        <input class='fielda' type='email' id='carlengthmetre' class='floatlabel' name='unit'>
+        <h2>Car Width (Inches)</h2>
+        <input class='fielda' type='email' id='carwidthmetre' class='floatlabel' name='metre'>
+        <h2>Car Height (Inches)</h2>
+        <input class='fielda' type='email' id='carheight' class='floatlabel' name='kilo'>
+        <h2>car Weight (Lbs)</h2>
+        <input class='fielda' type='email' id='weightkilo' class='floatlabel' name='kilo'>
+        <h2>Cylinder Number</h2>
+        <input class='fielda' type='email' id='cylindernumber' class='floatlabel' name='nounit'>
+        <h2>Enginesize (cu-in)</h2>
+        <input class='fielda' type='email' id='enginesizecc' class='floatlabel' name='cc'>
+        <h2>Horsepower</h2>
+        <input class='fielda' type='email' id='horsepoweruni' class='floatlabel' name='horsepowerunit'>
+        <h2>Peak rpm</h2>
+        <input class='fielda' type='email' id='peakrpmunit' class='floatlabel' name='rpm'>
+        <h2>City pmg</h2>
+        <input class='fielda' type='email' id='citympgunit' class='floatlabel' name='mpg'>
+        <h2>Car Manufacturer</h2>
+	<div>
+  <select class="CarName" name="" id="uiCarName">
+    <option value="" disabled="disabled" selected="selected">Choose a brand</option>
+		<option>audi</option>
+        <option>bmw</option>
+  </select>
+</div>
+</form>
+  
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+  <div class='m'>
+  <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+   </div>
+</body>
